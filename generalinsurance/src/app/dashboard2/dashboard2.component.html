@@ -1,0 +1,639 @@
+<main id="main" class="main">
+  <div class="row">
+    <div [ngClass]="outputValue ? 'col-md-2' : 'col-md-12'">
+      <app-sidebar (myoutput)="CapturedValue($event)"></app-sidebar>
+    </div>
+    <!--  -->
+    <div class="searchtable" [ngClass]="outputValue? 'col-md-10' : 'col-md-12'">
+      <div class="row">
+        <form action="db-table mt-2">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- 3rd container -->
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">App No</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <tr>
+                    <td>
+
+                      <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="InForce">00456788
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">Policy No</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <tr>
+                    <td>
+                      <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="InForce">83838389
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Plan </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>Future Generali Long Term Income Plan</td>
+                </div>
+              </div>
+            </div>        
+            <div class="co">
+              <div class="input-group">
+                <button type="button" routerLink="/update-policy" class="btn  btn-info">
+                  <i class="fa fa-eye" style="font-size:x-large" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Premium + Tax</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <td>
+                    <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltip" data-bs-title="10000=(9000+1000)"><i class="fa fa-inr"
+                        aria-hidden="true"></i>10000
+                    </button>
+                  </td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Sum Assured </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td><i class="fa fa-inr" aria-hidden="true"></i>3,00,000</td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Case Type </div>
+                </div>
+              </div>
+              <div class="col"> 
+                <div class="input-group">
+                  <td>Individual</td>
+                </div>
+              </div>
+
+            </div>
+          
+            <div class="co">
+              <div class="input-group">
+                <button type="button" class="invisible-button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Proposer</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <td>
+                    <div class="">
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Proposer">Sudhansu Sen
+                      </button>
+                      <button type="button" class="btn btn-narrow" (click)="openModal()">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">PAN</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>xxxxxxxxx4354</td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Life Assured </div>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>Mrs.monika sen</td>
+                  <button type="button" class="btn btn-narrow" (click)="openModal()">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="+917900812891">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="co-2">
+              <div class="input-group">
+                <button type="button" class="invisible-button"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row mt-5">
+        <form action="db-table2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">App No</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <tr>
+                    <td>
+                      <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="InForce">00456788
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- 3rd container -->
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Policy No</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <tr>
+                    <td>
+                      <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="InForce">56778780
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Plan </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>Future Generali Money Back Super Plan(NON-POS Variant)</td>
+                </div>
+              </div>
+            </div>
+           
+            <div class="co">
+              <div class="input-group">
+                <button type="button" routerLink="/update-policy" class="btn  btn-info" data-bs-toggle="tooltip"
+                  data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="">
+                  <i class="fa fa-eye" style="font-size:x-large" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">Premium + Tax</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>
+                    <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltip" data-bs-title="12000=(11000+1000)"><i class="fa fa-inr"
+                        aria-hidden="true"></i>12000
+                    </button>
+                  </td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Sum Assured </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td><i class="fa fa-inr" aria-hidden="true"></i>3,00,000</td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Case Type </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>HUF</td>
+                </div>
+              </div>
+            </div>
+            <div class="co-2">
+              <div class="input-group">
+                <button type="button" class="invisible-button"></button>
+              </div>
+            </div>
+       
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Proposer</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <td>
+                    <div class="">
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Proposer">Sudhansu Sen
+                      </button>
+                      <button type="button" class="btn btn-narrow" (click)="openModal()">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </td>
+                </div>
+              </div>
+             
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">PAN</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>xxxxxxxxx4354</td>
+                </div>
+              </div>
+            </div>
+         
+              <div class="row">
+                <div class="col-6 ">
+                  <div class="input-group">
+                    <div class="input-group-text border-0">Life Assured </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group">
+                    <td>Mrs.monika sen</td>
+                    <button type="button" class="btn btn-narrow" (click)="openModal()">
+                      <i class="fa fa-address-card" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>  
+              </div>
+              <div class="co-2">
+                <div class="input-group">
+                  <button type="button" class="invisible-button"></button>
+                </div>
+              </div>
+             
+            <!-- <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <button type="button" routerLink="/update-policy" class="btn  btn-info" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="">
+                    <i class="fa fa-info-circle" style="font-size:x-large"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <button type="button" routerLink="/renewal-request" class="btn  btn-info" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="">
+                    <i class="fa fa-eye" style="font-size:x-large" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+            
+          </div>
+        </form>
+      </div>
+
+    <!-- 3rd table -->
+      <div class="row mt-5">
+        <form action="db-table3">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- 3rd container -->
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">App No</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <tr>
+                    <td>
+                      <button type="top" class="btn  btn-expired" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Lapsed" >345678
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">Policy No</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <tr>
+                    <td>
+                      <button type="top" class="btn btn-expired" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Lapsed">83838389
+                      </button>
+                    </td>
+                  </tr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Plan </div>
+                </div>
+              </div>  
+              <div class="col">
+                <div class="input-group">
+                  <td>Future Generali Heart and Health Insurance Plan</td>
+                </div>
+              </div>
+            </div>
+          
+            <div class="co">
+              <div class="input-group">
+                <button type="button" routerLink="/update-policy" class="btn  btn-info" data-bs-toggle="tooltip"
+                  data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="">
+                  <i class="fa fa-eye" style="font-size:x-large" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Premium + Tax</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <td>
+                    <button type="top" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      data-bs-custom-class="custom-tooltip" data-bs-title="12000=(11000+1000)"><i class="fa fa-inr"
+                        aria-hidden="true"></i>12000
+                    </button>
+                  </td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Sum Assured </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td><i class="fa fa-inr" aria-hidden="true"></i>3,00,000</td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Case Type </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>KEY Man</td>
+                </div>
+              </div>
+            </div>
+            <div class="co-2">
+              <div class="input-group">
+                <button type="button" class="invisible-button"></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-text">Proposer</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>
+                    <div class="">
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Nominee">Sudip Sen
+                      </button>
+                      <button type="button" class="btn btn-narrow" (click)="openModal()">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">PAN</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>xxxxxxxxx4354</td>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <div class="input-group-text border-0">Life Assured </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <td>Mrs.monika sen </td>
+                  <button type="button" class="btn btn-narrow" (click)="openModal()">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="co-2">
+              <div class="input-group">
+                <button type="button" class="invisible-button"></button>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-6 ">
+                <div class="input-group">
+                  <button type="button" routerLink="/update-policy" class="btn  btn-info">
+                    <i class="fa fa-info-circle" style="font-size:x-large"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <button type="button" routerLink="/renewal-request" class="btn  btn-info">
+                    <i class="fa fa-eye" style="font-size:x-large" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- <button type="button" class="btn btn-primary" (click)="openModal()">Open Modal</button> -->
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <th>Phone</th>
+        <td>7008391289</td>
+        <th>Email</th>
+        <td>companyname@domain.com</td>
+        <button type="button" class="close" (click)="ngOnInit()" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form-label">Permanent Address*</label>
+                </div>
+                <div class="col-md-8">
+
+                  <fieldset>
+                    <input type="text" class="form-control" value="" placeholder="permanent address....."><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label class="form-label">Communication Address*</label>
+                      </div>
+                      <div class="col-md-8">
+                        <fieldset>
+                          <input type="text" class="form-control" value="" placeholder="current address........"><br>
+                          <input type="text" class="form-control" value="" placeholder="........"><br>
+                          <input type="text" class="form-control" value="........" placeholder="........"><br>
+                          <input type="text" class="form-control" value="........" placeholder="........"><br>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="ngOnInit()" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>

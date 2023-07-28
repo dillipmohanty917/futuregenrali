@@ -1,0 +1,38 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    display: block;
+    margin: 0px;
+    background-color:blue;
+    font-family: Roboto, sans-serif;
+}
+
+th,td,tr,button,select,textarea,span,.input-group-text{
+    font-family:   Roboto, sans-serif!important ;
+    font-size: 1rem !important;
+}
+
+h1,h2,h3,h4,h5,h5,title,label,p{
+    font-family:Roboto, sans-serif;
+    font-size: 1rem !important 
+}
+
+select.form-select{
+    font-family: Roboto;
+    font-size: 1rem !important
+}
+
+
+.btn{
+    border-radius: 0px !important;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

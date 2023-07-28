@@ -1,0 +1,180 @@
+<div class="renewal-request">
+    <div class="container-fluid" style="background-color: var(--bs-gray-200); padding-top: 5px;">
+        <h3>Partial-withdrawl-request-query</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 1st container -->
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Partial withdrawl applicable</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <td><button class="link-button" (click)="toggleULIPTable()">Total Fund Value</button></td>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <td> <i class="fas fa-rupee-sign"></i> 11,400</td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Partial withdrawl can be made after</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <td><input type="datetime-local" class="date" id="start-date" placeholder=""> </td>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Max Partial Withdrawl possible</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <td><i class="fas fa-rupee-sign"></i>11,400</td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Partial withdrawl can be made after</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <td><input type="datetime-local" class="date" id="start-date" placeholder=""> </td>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Partial Withdrawl amount requested</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <td> <i class="fas fa-rupee-sign"></i> 5000</td>
+            </div>
+        </div>
+    </div>
+    <!-- 4th container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text">Customer signing date and time</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <td><input type="datetime-local" class="date" id="start-date" placeholder=""> </td>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Generate Fund value letter</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <button class="btn btn-info-1" type="button">
+                            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        </button>
+                        <button class="btn btn-info-1" type="button" style="margin-left: 10px; margin-right:10px">
+                            <a href="mailto:"><i class="far fa-envelope"></i></a>
+                        </button>
+                        <button class="btn btn-info-1" type="button" style="margin-left:5px; margin-right:5px">
+                            <a href="mailto:"><i class="fa fa-message"></i></a>
+                        </button>
+                        <button type="submit" class="btn btn-info-1" type="button">
+                            <i class="fa fa-paper-plane"
+                                aria-hidden="true"></i><!-- Replace "fas fa-check" with the appropriate icon class -->
+                        </button>
+                        <button type="submit" class="btn btn-info-1" type="button"
+                            style="margin-left:5px; margin-right:5px">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <!-- Replace "fas f-checka" with the appropriate icon class -->
+                        </button>
+                        <button type="submit" class="btn btn-info-1" type="button"
+                            style="margin-left: 5px; margin-right:5px">
+                            <i class="fa fa-print" aria-hidden="true"></i>
+                            <!-- Replace "fas fa-check" with the appropriate icon class -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <td><button type="button" class="btn btn-secondary">Continue</button></td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" *ngIf="showULIPTable" (click)="hideTables()">
+        <table class="table table-responsive table-bordered" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th class="col-md-3">Fund Name</th>
+                    <th class="col-md-3">Nav</th>
+                    <th class="col-md-3">Units Available</th>
+                    <th class="col-md-3">Fund value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 1st row -->
+                <!--  -->
+                <tr class="col-1">
+                    <td>Fund name 1</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>1200</td>
+                </tr>
+                <tr class="col-1">
+                    <td>Fund name 2</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>1200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<div>

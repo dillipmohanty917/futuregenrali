@@ -1,0 +1,408 @@
+<!-- <app-update-policy></app-update-policy> -->
+<main id="main" class="main">
+  <div *ngIf="!isOtherPageRoute()" class="header-renewal">
+    <table class="table">
+      <thead class="1sthead " style="background-color: #dee2e6;">
+        <tr>
+          <th class="col-1" style="text-align: center"></th>
+          <th class="col-3" style="text-align: center">
+            <select class="form-select" aria-label="Premium type">
+              <option selected value="renewal">Renewal query/Request</option>
+            </select>
+          </th>
+          <th class="col-2">Renewal</th>
+          <th class="col-1" style=" text-align: center">
+            <select class="form-select" aria-label="Premium type">
+              <option value="renewal1" selected>Renewal query/Request</option>
+            </select>
+          </th>
+          <th class="col-2" style=" text-align: center">Renewal Info</th>
+          <th class="col-2" style="text-align: center;font-size:12px">
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+                Other Links
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">DMS</a></li>
+                <li><a class="dropdown-item" href="#">Service Request</a></li>
+                <li><a class="dropdown-item" href="#">Client Id Details</a></li>
+                <li><a class="dropdown-item" href="#">Payout Details</a></li>
+              </ul>
+            </div>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div class="renewal-request  col-md-12">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 1st container -->
+        <div class="col-md-5">
+          <div class="input-group">
+            <div class="input-group-text">Revival type</div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- 2nd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">Send payment/revival Link</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-append">
+              <button class="btn btn-info-1" type="button">
+                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+              </button>
+              <button class="btn btn-info-1" type="button" style="margin-left: 10px; margin-right:10px">
+                <a href="mailto:"><i class="far fa-envelope"></i></a>
+              </button>
+              <button class="btn btn-info-1" type="button">
+                <a href="mailto:"><i class="fa fa-message"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-md-6">
+          <div class="input-group">
+            <div class="input-group-text">Auto pay</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <td>Payment should debit automatic</td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Interest waiver</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+
+            <div class="input-group-append">
+              <button class="btn btn-info-1" type="button"><a href="mailto:">
+                  <i class="far fa-envelope"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Auto pay details(NACH & SI)</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>Transaction-id:23456789876ff234</td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Renewal pickup request</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <textarea class="form-control border-0" id="customerType" placeholder="address"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Total base premium + tax</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>30,000</td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Request pickup date</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <input type="datetime-local" class="date" id="start-date" placeholder="choose date / time">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-info-1" type="button">
+                <i class="fa fa-paper-plane"
+                  aria-hidden="true"></i><!-- Replace "fas fa-check" with the appropriate icon class -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Interst amount</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>1200</td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Revival requirements</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>40000</td>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="input-group">
+            <div class="input-group-text border-0">Amount in suspense(debit/credit)</div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="input-group">
+            <td>1000</td>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" style="background-color:#dee2e6;">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Total amount due</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">One time transaction</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Interst waiver & amt</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td></td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Overdue period</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+
+            <td>45 days</td>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-md-5">
+          <div class="input-group">
+            <div class="input-group-text">DGH required</div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Premium holiday
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="input-group">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+            </div>
+            <div class="input-group-append">
+              <label for="quantity">Days:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 3rd container -->
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Balance no of years to pay</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>5yrs</td>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">No of years premium paid
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <td>3yrs</td>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <table class="table table-responsive table-bordered" style="text-align: center;">
+        <thead>
+          <tr>
+            <th class="col-md-4">Payment Date</th>
+            <th class="col-md-4">Payment Amount</th>
+            <th class="col-md-4">Payment Method</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1st row -->
+
+          <!--  -->
+          <tr class="col-1">
+            <td>20-05-2023</td>
+            <td>5000</td>
+            <td>Online UPI</td>
+          </tr>
+          <tr class="col-1">
+            <td>20-05-2022</td>
+            <td>5000</td>
+            <td>Online UPI</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- <div class="container-fluid border">
+      <div class="row">
+        
+        <div class="col-md-12">
+          <div class="input-group">
+            <div class="input-group-text">Payment Date</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="input-group">
+            <input type="datetime-local" class="date" id="start-date" placeholder="Choose date / time">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+        <div class="input-group">
+          <div class="input-group-text border-0">Payment Amount</div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="input-group">
+         <td>12000</td>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="input-group">
+          <div class="input-group-text border-0">Payment Method
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="input-group">
+         <td>Online UPI </td>
+        </div>
+      </div>
+    </div>
+    </div> -->
+</main>
+
+

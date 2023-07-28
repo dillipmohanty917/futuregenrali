@@ -1,0 +1,784 @@
+<main id="main" [ngClass]="isDataVisible ? 'col-md-9' : 'col-md-12'" class="main">
+  <div id="table1" class="table1 col-md-12">
+    <table style="width:100%">
+      <thead style="background: #dee2e6">
+        <th class="col-md-3">Identifiers</th>
+        <th class="col-md-2">Plan &amp; Status</th>
+        <th class="col-md-2">Sum Assured</th>
+        <th class="col-md-2">Premium Details</th>
+        <th class="col-md-2">Sales Details</th>
+      </thead>
+      <tbody>
+        <!-- 1st row -->
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-text">Policy Number</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+          <td>456788990073</td>
+  </div>
+  </div>
+  </div>
+  </td>
+  <td>
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="input-group">
+          <div class="input-group-text border-0">Customer Type</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group">
+  <td>HNI</td>
+  </div>
+  </div>
+  </div>
+  </td>
+
+  <td>
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="input-group">
+          <div class="input-group-text border-0">Sum Assured</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group">
+          <!-- <input type="text" class="form-control border-0" id="sumAssured" placeholder="Sum Assured"> -->
+  <td colspan="2">5,00,000</td>
+  </div>
+  </div>
+  </div>
+  </td>
+
+  <td>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group">
+          <div class="input-group-text border-0">Premium Details</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group">
+          <!-- <input type="text" class="form-control border-0" id="premiumAmt" placeholder=""> -->
+  <td colspan="2">10000</td>
+  </div>
+  </div>
+  </div>
+  </td>
+
+  <td>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group">
+          <div class="input-group-text border-0">Branch</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group">
+          <!-- <input type="text" class="form-control border-0" id="branch" placeholder="branch"> -->
+  <td colspan="2">Kukkatpally</td>
+  </div>
+  </div>
+  </div>
+  </td>
+  </tr>
+
+  <!-- 1st row end -->
+
+  <!-- 2nd row start -->
+
+  <tr>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">App Number</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+    <td>2232000088</td>
+    </div>
+    </div>
+    </div>
+    </td>
+
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Plan Name</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="Planname" placeholder=""> -->
+    <td>ULIP</td>
+    </div>
+    </div>
+    </div>
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">PT</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="pt" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">PPT</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="ppt" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">Channel</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="Channel" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+  </tr>
+
+  <!-- 2nd row end -->
+  <!-- 3rd row start -->
+  <tr>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Life Assured Name</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+    <td>Mrs.monika sen</td>
+    <button type="button" class="btn btn-narrow" (click)="openModal()">
+      <i class="fa fa-address-card" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+      data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+    <i class="fa fa-phone" aria-hidden="true"></i></button>
+    </div>
+    </div>
+    </div>
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Policy Status</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+    <td>Active</td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">RCD</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="rcd" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">Premium Amt</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="premiumamount" placeholder=""> -->
+    <td>15000</td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">Agent Name</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="agentname" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+  </tr>
+
+
+  <!-- 3rd row end -->
+  <!-- 4 row start -->
+  <tr>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text">Proposer Name</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+    <td>sudhansu sen</td>
+    <button type="button" class="btn btn-narrow" (click)="openModal()">
+      <i class="fa fa-address-card" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+      data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+      <i class="fa fa-phone" aria-hidden="true"></i></button>
+    </div>
+    </div>
+    </div>
+    </td>
+
+
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Premium Status</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="premiumStatus" placeholder=""> -->
+    <td>Inforce</td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="input-group">
+            <div class="input-group-text border-0">Assignment</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="assignment" placeholder=""> -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0">Mode</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control border-0" id="mode" placeholder=""> 
+                  -->
+    <td></td>
+    </div>
+    </div>
+    </div>
+
+    </td>
+    <td>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group">
+            <div class="input-group-text border-0" for="flexSwitchCheckDefault">Orphan Flag</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </td>
+
+  </tr>
+  <!-- 4 row end -->
+  </tbody>
+  </table>
+  </div>
+
+  <div id="table2" class="table2">
+    <div class="row">
+      <table class="table-responsive1">
+        <thead>
+          <tr>
+            <th class="th-class">Identifier</th>
+            <th>Policy Number</th>
+            <th>App Number</th>
+            <th>Life Assured Name</th>
+            <th>Proposer Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>456788990073</td>
+            <td>2232000088</td>
+            <td>
+              Mrs.monika sen
+              <button type="button" class="btn btn-narrow" (click)="openModal()">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </button>
+            </td>
+            <td>
+              sudhansu sen
+              <button type="button" class="btn btn-narrow" (click)="openModal()">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="btn  btn-narrow" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip" data-bs-title="+917008391289">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+
+        <thead>
+          <tr>
+            <th class="th-class">Plan & Status</th>
+            <th>Customer Type</th>
+            <th>Plan Name</th>
+            <th>Policy Status</th>
+            <th>Premium Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td></td>
+            <td>HNI</td>
+            <td>ULIP</td>
+            <td>Active</td>
+            <td>Inforce</td>
+          </tr>
+        </tbody>
+        <!--  -->
+        <thead>
+          <tr>
+            <th class="th-class">Sum Assured</th>
+            <th>Sum Assured</th>
+            <th>PT</th>
+            <th>RCD</th>
+            <th>Assignment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>5,00,00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <!--  -->
+          <!-- <tr>
+            <th>Policy Number</th>
+            <td>456788990073</td>
+            <th>App Number</th>
+            <td>
+              2232000088</td>
+              <th>Life Assured Name</th>
+              <td>Sachin rameshkumar tendulkar sdd</td>
+              <th>Proposer Name</th>
+              <td>arjuna venkatsai reddykumar  adffvvf</td>
+          </tr> -->
+        </tbody>
+
+        <thead>
+          <tr>
+            <th class="th-class">Premium Details</th>
+            <th>Premium Details</th>
+            <th>PPT</th>
+            <th>Premium Amt</th>
+            <th>Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>10000</td>
+            <td></td>
+            <td>15000</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="th-class">Sales Details</th>
+            <th>Branch</th>
+            <th>Channel</th>
+            <th>Agent Name</th>
+            <th>Orphan Flag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td> Kukkatpally,hyderabad</td>
+            <td>Hrushikesh bhol</td>
+            <td></td>
+            <td>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="row mt-5">
+      <table class="table">
+        <thead class="1sthead " style="background-color: #dee2e6;">
+          <tr>
+            <th class="col-1" style="text-align: center"></th>
+            <th class="col-3" style="text-align: center">
+              <select class="form-select" aria-label="Premium type" (change)="onSelect($event)">
+                <option selected>Call Type</option>
+                <option value="renewal">Renewal query/Request</option>
+                <option value=>Partial withdrawl</option>
+                <option value=>Total fund value</option>
+                <option value=>Surrender request</option>
+              </select>
+
+            </th>
+
+            <th class="col-2">Renewal</th>
+            <th class="col-1" style=" text-align: center">
+              <select class="form-select" aria-label="Premium type" (change)="selectsuboption($event)">
+                <option selected>Sub Type</option>
+                <option value="renewal1">Renewal query/Request</option>
+                <option value=>Partial withdrawl</option>
+                <option value=>Total fund value</option>
+                <option value=>Surrender request</option>
+
+              </select>
+            </th>
+            <th class="col-2" style=" text-align: center">Renewal Info</th>
+
+            <th class="col-2" style="text-align: center;font-size:12px">
+              <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+                  Other Links
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">DMS</a></li>
+                  <li><a class="dropdown-item" href="#">Service Request</a></li>
+                  <li><a class="dropdown-item" href="#">Client Id Details</a></li>
+                  <li><a class="dropdown-item" href="#">Payout Details</a></li>
+
+                </ul>
+              </div>
+            </th>
+            <th> <button type="button" routerLink="/renewal-request" class="btn  btn-info">
+                <i class="fa fa-plus-circle"></i>
+              </button></th>
+            <th><button type="button" class="btn btn-info" (click)="toggleData()"> <i
+                  class="fa fa-info-circle"></i></button></th>
+          </tr>
+        </thead>
+
+      </table>
+
+      <div *ngIf="selectedOption === 'renewal' && suboption === 'renewal1'">
+        <app-renewal-query-request></app-renewal-query-request>
+      </div>
+      <table class="table table-responsive table-bordered" style="text-align: center;">
+        <thead>
+          <tr>
+            <th class="col-1" style="font-size:15px">Last 5 open tickets</th>
+            <th class="col-1">Ticket No</th>
+            <th class="col-1">Call Type</th>
+            <th class="col-1">Sub Type</th>
+            <th class="col-1">Request Date</th>
+            <th class="col-1">Status</th>
+            <th class="col-1">Q/R/C</th>
+            <th class="col-1">TAT</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!--  -->
+          <tr class="col-1">
+            <td></td>
+            <td>Transaction 0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="col-1">
+            <td></td>
+            <td>Transaction 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="col-1">
+            <td></td>
+            <td>Transaction 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="col-1">
+            <td></td>
+            <td>Transaction 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="col-1">
+            <td></td>
+            <td>Transaction 4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!--  -->
+        </tbody>
+      </table>
+      <!-- </div> -->
+
+      <!-- sidebar -->
+      <div class="row col-md-3">
+        <div id="data-container" style="background-color: var(--bs-gray-300);border: 1px solid; font-size:14px"
+          class="data-container" [hidden]="!isDataVisible">
+          <table>
+            <tr>
+              <td colspan="2"><strong>Nps Score:</strong></td>
+              <td> 752 </td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Customer Sentiment:</strong></td>
+              <td> Positive </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: #a81c1f;  color:#fff; margin-bottom:0px;"><strong>Near Future
+                  Event:</strong>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>PO/LA DOB:</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Renewal due date/T-30 day Flg:</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Policy payout:</strong></td>
+              <td>SB</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Loan (If active):</strong></td>
+              <td>Loan Details</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: #a81c1f;  color:#fff; margin-bottom:0px;"><strong>Customer
+                  Profile
+                  Details</strong></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>*Customer Profile</strong></td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>KYC</strong></td>
+              <td colspan="2">DONE</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>PAN Status</strong></td>
+              <td>DONE</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>PAN Aadhaar seeding status </strong></td>
+              <td>DONE</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><strong>Contact details - Mobile </strong></td>
+              <td>Non-contact</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Contact details - Email</strong></td>
+              <td>Non-contact</td>
+            </tr>
+            <tr>
+              <td><strong>Update bank account</strong></td>
+              <td>IMPS pass / fail / No bank A/C</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Update Auto pay</strong></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: #a81c1f; color:#fff;margin-bottom:0px;"><strong>*Register
+                  Details</strong></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Registered on Portal</strong></td>
+              <td>YES</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Registered on mobile app</strong></td>
+              <td>YES</td>
+
+            </tr>
+            <tr>
+              <td colspan="2"><strong> Last login date & time (P/M)</strong></td>
+              <td>Details</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+      <!-- sidebar close -->
+
+    </div>
+
+  </div>
+
+</main>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <th>Phone</th>
+        <td>7008391289</td>
+        <th>Email</th>
+        <td>companyname@domain.com</td>
+        <button type="button" class="close" (click)="ngOnInit()" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form-label">Permanent Address*</label>
+                </div>
+                <div class="col-md-8">
+
+                  <fieldset>
+                    <input type="text" class="form-control" value="" placeholder="permanent address....."><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                    <input type="text" class="form-control" value="" placeholder="........"><br>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label class="form-label">Communication Address*</label>
+                      </div>
+                      <div class="col-md-8">
+                        <fieldset>
+                          <input type="text" class="form-control" value="" placeholder="current address........"><br>
+                          <input type="text" class="form-control" value="" placeholder="........"><br>
+                          <input type="text" class="form-control" value="........" placeholder="........"><br>
+                          <input type="text" class="form-control" value="........" placeholder="........"><br>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

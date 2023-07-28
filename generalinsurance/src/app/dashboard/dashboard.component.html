@@ -1,0 +1,238 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="sidebar  w-100">
+        <form class="search-form" [style.display]="showSearchForm ? 'block' : 'none'">
+          <div class="form-group">
+            <!-- <label for="search">Policy number:</label> -->
+            <div class="search-input pt-3 pb-1">
+              <label for="category">Policy No:</label>
+              <input type="text" id="search" name="search" placeholder="policy no">
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">App No:</label>
+              <input type="text" id="search" name="search" placeholder="application no">
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">Mobile No:</label>
+              <input type="text" id="search" name="search" placeholder="phone number">
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">Customer Id:</label>
+              <input type="text" id="search" name="search" placeholder="customer id">
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">PAN No:</label>
+              <input type="text" id="search" name="search" placeholder="pan number">
+            </div>
+
+          </div>
+          <div class="class" style="display:flex; margin-top:10px; margin-bottom:10px;">
+            <button type="button" class="btn btn-info" style="margin-right: 10px;" (click)=advancetoggleForm()>Advance
+              Search<i class="fa fa-search-plus" style="margin-left:5px;"></i></button>
+            <button type="button" routerLink="/user-policy" class="btn btn-info">Submit</button>
+          </div>
+
+        </form>
+      </div>
+      <div class="advance-sidebar" [style.display]="advancesearchForm ? 'block' : 'none'">
+        <form class="search-form1">
+          <div class="form-group">
+            <!-- <label for="search">Policy number:</label> -->
+            <div class="search-input pt-3 pb-3">
+              <label for="category">Name:</label>
+              <input type="text" id="search" name="search" placeholder="first Name / last Name">
+            </div>
+            <div class="search-input">
+              <label for="category">DOB:</label>
+              <input type="date" class="form-control" step="60" id="datetime" formControlName="date">
+            </div>
+
+            <div class="search-input mt-2">
+              <label for="category">Role:</label>
+              <select id="category" name="category">
+                <option value="">Role Type</option>
+                <option value="books">LA</option>
+                <option value="movies">PO</option>
+                <option value="music">Nominee</option>
+              </select>
+              <!-- <input type="text" id="search" name="search" placeholder=""> -->
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">Case Type:</label>
+              <select id="category" name="category">
+                <option value="">Choose Case Type</option>
+                <option value="books">Individual</option>
+                <option value="movies">HUF</option>
+                <option value="music">Key man</option>
+              </select>
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">Assigned flag:</label>
+              <select id="category" name="category">
+                <option value="">Yes</option>
+                <option value="books">No</option>
+              </select>
+            </div>
+            <div class="search-input mt-2">
+              <label for="category">MWPA flag:</label>
+              <select id="category" name="category">
+                <option value="">Yes</option>
+                <option value="books">No</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="class" style="display:flex; margin-top:10px; margin-bottom:10px;">
+            <button type="button" (click)=toggleSearchForm() class="btn btn-info" style="margin-right: 10px;">Normal
+              Search<i class="fa fa-arrow-left" style="margin-left:5px;"></i></button>
+            <button type="button" routerLink="/user-policy" class="btn btn-info">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="header">
+          <table class="table">
+            <thead class="1sthead " style="background-color: #dee2e6;">
+              <tr>
+                <th class="col-1" style="text-align: center"></th>
+                <th class="col-3" style="text-align: center">
+                  <select class="form-select" aria-label="Premium type">
+                    <option selected>Call Type</option>
+                    <option value="renewal">Renewal query/Request</option>
+                    <option value=>Partial withdrawl</option>
+                    <option value=>Total fund value</option>
+                    <option value=>Surrender request</option>
+                  </select>
+                </th>
+
+                <th class="col-1">Renewal</th>
+                <th class="col-3" style=" text-align: center">
+                  <select class="form-select" aria-label="Premium type">
+                    <option selected>Sub Type</option>
+                    <option value="renewal1">Renewal query/Request</option>
+                    <option value=>Partial withdrawl</option>
+                    <option value=>Total fund value</option>
+                    <option value=>Surrender request</option>
+
+                  </select>
+                </th>
+                <th class="col-2" style=" text-align: center">Renewal Info</th>
+
+                <th class="col-2" style="text-align: center;font-size:12px">
+                  <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+                      Other Links
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">DMS</a></li>
+                      <li><a class="dropdown-item" href="#">Service Request</a></li>
+                      <li><a class="dropdown-item" href="#">Client Id Details</a></li>
+                      <li><a class="dropdown-item" href="#">Payout Details</a></li>
+
+                    </ul>
+                  </div>
+                </th>
+                <th> <button type="button" routerLink="/renewal-request" class="btn  btn-info">
+                    <i class="fa fa-plus-circle"></i>
+                  </button></th>
+                <th><button type="button" class="btn btn-info"> <i class="fa fa-info-circle"></i></button></th>
+              </tr>
+            </thead>
+
+          </table>
+        </div>
+        <table class="table table-bordered mt-3 w-100" style="text-align:center ">
+          <thead>
+            <tr>
+              <th class="">Last 5 open tickets</th>
+              <th class="">Policy No</th>
+              <th class="">Ageing</th>
+              <th class="">Pending </th>
+              <th class="">Ticket No</th>
+              <th class="">Call Type</th>
+              <th class="">Sub Type</th>
+              <th class="">Request Date</th>
+              <th class="">Status</th>
+              <th class="">Q/R/C</th>
+              <th class="">TAT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1st row -->
+
+            <!--  -->
+            <tr class="">
+              <td>Transaction 0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="col-1">
+              <td>Transaction 1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="col-1">
+              <td>Transaction 2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="col-1">
+              <td>Transaction 3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="col-1">
+              <td>Transaction 4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!--  -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

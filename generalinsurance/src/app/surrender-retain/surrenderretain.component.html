@@ -1,0 +1,263 @@
+<div class="renewal-request  col-md-12">
+    <div class="container-fluid" style="background-color: var(--bs-gray-200); padding-top: 5px;">
+        <h3>Surrender Retain</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 1st container -->
+            <div class="col-md-5">
+                <div class="input-group">
+                    <div class="input-group-text">Checklist</div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Total Premium Paid</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td> <i class="fas fa-rupee-sign"></i> 100000</td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text">Customer Signing</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <td><input type="datetime-local" class="date" id="start-date" placeholder=""> </td>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Gross Surrender Value</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td> <i class="fas fa-rupee-sign"></i> 11,400</td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Total Fund</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td><button class="link-button" (click)="toggleULIPTable()">Surrender Value(ULIP)</button></td>
+                    <!-- <td><button class="link-button"  (click)="toggleNonULIPTable()">Surrender Value(NON-ULIP)</button></td> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-text">Net Surrender Value</div>
+                </div>
+            </div>
+            <div class="col">
+                <td> <i class="fas fa-rupee-sign"></i> 5000</td>
+            </div>
+        </div>
+    </div>
+    <!-- 4th container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <td></td>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Surrender Value Date</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td> 09-Apr-23 </td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5th container -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text">Retention Tools</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group1">
+                    <div><a href="" style="display: block;">Product USP</a></div>
+                    <div><a href="">PSW Available(details)</a></div>
+                    <div><a href="">Loan Available(details)</a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Policy Net Loss/Gain</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td></td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6th container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text"> Surrender Request </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <a href="">Surrender Request</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0">Last renewal call disposition</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td></td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--7th container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-text">Upload Customer rentention letter</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+               <td  (click)="handleIconClick()"><i class="fas fa-file-upload fa-lg "></i> </td> 
+               <input type="file" #fileInput style="display: none">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group">
+                    <div class="input-group-text border-0"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <td></td>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" *ngIf="showULIPTable" (click)="hideTables()">
+        <table class="table table-responsive table-bordered" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th class="col-md-3">Fund Name</th>
+                    <th class="col-md-3">Nav</th>
+                    <th class="col-md-3">Units Available</th>
+                    <th class="col-md-3">Fund value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 1st row -->
+                <!--  -->
+                <tr class="col-1">
+                    <td>Fund name 1</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>1200</td>
+                </tr>
+                <tr class="col-1">
+                    <td>Fund name 2</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>1200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-fluid" *ngIf="showNonULIPTable" (click)="hideTables()">
+        <table class="table table-responsive table-bordered" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th class="col-md-4">Particulars</th>
+                    <th class="col-md-4">Amount</th>
+                    <th class="col-md-4">Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 1st row -->
+                <!--  -->
+                <tr class="col-1">
+                    <td>Gross Surrender Value</td>
+                </tr>
+                <tr class="col-1">
+                    <td>(-)Loan</td>
+                </tr>
+                <tr class="col-1">
+                    <td>(-)TDS % & amt</td>
+                </tr>
+                <tr class="col-1">
+                    <td>Policy Net Loss/Gain</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
